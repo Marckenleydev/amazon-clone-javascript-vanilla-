@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="css/glider.min.css"/>
+       
+    
+
+    
+    <!-- <link rel="stylesheet" href="css/style.css"/> -->
+     
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="./firebase.js"></script>
+   
+    
+    <script src="./app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css " rel="stylesheet"/>
+    <title>Amazon</title>
+    </head>
+        <body class="bg-gray-100">
+
+            <div class="bg-white w-full">
+                   <div class="header-1  ">
+                       <div class="header-left pt-4 flex pl-4">
+                        <div class="img-icon  ">
+                           <a href="index.html"><img class="image h-8 w-30 "  src="https://www.pinclipart.com/picdir/big/57-576184_view-our-amazon-storefront-amazon-logo-white-png.png"/></a> 
+                        </div>
+
+
+                        <div class="deliver  text-white w-18 ml-6">
+                            <h3 class="text-gray-300 text-xs">Deliver to</h3>
+                             <span class="font-bold">Turkey</span>
+                        </div>
+
+                       </div>
+
+
+                       <div class="header-center ml-6 pt-4 flex flex-grow">
+                              <div class="all border-t-2 border-fuchsia-700 border bg-white h-10 w-14 rounded-l-md bg-gray-100">
+                                  <h3 class=" pt-2 text-gray-600 pl-2 text-xs">All</h3>
+ 
+                              </div>
+                              <div class="search flex-grow flex">
+                                  <input class="input-serch flex-grow flex h-10  focus:outline-none  pl-2 " />
+                              </div>
+
+                              <div class="all  bg-yellow-300 h-10 w-12 rounded-r-md bg-gray-100">
+                                <h3 class=" pt-2 text-gray-600 pl-2 text-xs"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round"
+                                     stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></h3>
+
+                            </div>
+                       </div>
+                       <div class="header-right flex pt-4 justify-end pr-8">
+                        <div class="deliver  text-white w-18 ml-6">
+                            <h3 class="text-xs font-bold">Hello,Sign in</h3>
+                             <span class="font-bold">Account & List</span>
+                        </div>
+
+                        <div class="deliver  text-white w-18 ml-6">
+                            <h3 class="text-xs font-bold">Returns</h3>
+                             <span class="font-bold">& Orders</span>
+                        </div>
+                        <div class="pl-8">
+                            <div class="connect  text-white flex  ml-16">
+                                <h3 class="text-xs text-sign font-bold">Sign in</h3>
+                               
+                                
+                            </div>
+                        <div  class="cart-icon relative bg-yellow-500 h-10 w-10 flex justify-center items-center rounded-xl">
+                            <div class="cart-item-number absolute -top-1 text-xs -right-1 h-4 w-4 bg-white rounded-full flex justify-center items-center text-gray-800">1</div>
+                        <a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                          </svg>
+                      </div></a>  
+                    </div>
+
+                       </div>
+
+                   </div>
+
+                   
+            </div>
+            <!-- header-2 -->
+            <div class="header-2 bg-gray-700 flex text-white h-10 justify-between">
+                      
+                       <div class="header-2-left flex items-center pl-2 ">
+                           <ul class="content-header flex">
+                               <li class="item-list">All</li>
+                               <li class="item-list">Today's Deal</li>
+                               <li class="item-list">Customer Service</li>
+                               <li class="item-list">Registry</li>
+                               <li class="item-list">Gift Cards</li>
+                               <li class="item-list">Sell</li>
+                           </ul>
+                       </div>
+                       <div class="header-covid font-bold flex items-center pl-4 pr-2">
+                           <h2>Amazon's response to covid-19</h2>
+                       </div>
+
+            </div>
+            <!-- banner -->
+            <div class="main-section-shopping-cart flex-1  mt-6 h-full justify-center ml-4">
+                <h1 class="shopping-cart flex items-center font-bold text-gray-500 text-3xl mb-6 ml-6">Shopping Cart</h1>
+                <div class="table-title flex font-bold text-gray-400 ml-6 w-full">
+                    <h2 class="flex-grow">Products</h2>
+                    <h2 class=" w-48">Count</h2>
+                    <h2 class="w-48">Total Cost</h2>
+                    <span class="w-10"></span>
+
+                </div>
+
+                <div class="cart-items mt-5 ">
+                    <!-- <div class="cart-item flex items-center pb-4 border-b border-gray-200  ">
+                        <div class="cart-item-img w-40 h-24 bg-white p-4 rounded-lg">
+                            <img class="w-full h-full object-contain" src="https://st3.myideasoft.com/shop/mr/53/myassets/products/971/macbook-pro-13-3-inc-m1-8c-16gb-ram-256gb-ssd-uzay-grisi-z11b00098-60-jpg.jpeg?revision=1623059036" alt="">
+                        </div>
+                        <div class="cart-item-details flex-grow ml-6">
+                            <div class="cart-item-title text-sm font-bold text-gray-400">Apple Macbook Pro 13.3</div>
+                            <div class="cart-item-brain text-sm text-gray-400">Apple</div>
+                        </div>
+
+                        <div class="cart-item-counter w-48 flex items-center">
+                            <div class=" cheveron-left cursor-pointer text-gray-400  rounded h-6 w-6 flex items-center bg-gray-100 hover:bg-gray-200 justify-center mr-2"><i class="fas fa-chevron-left fa-x5"></i></div>
+                            <h4 class="text-gray-400">x1</h4>
+                            <div class="cheveron-right cheveron-left cursor-pointer text-gray-400 ml-2 rounded justify-center h-6 w-6 flex items-center bg-gray-100 hover:bg-gray-200"><i class="fas fa-chevron-right fa-x5"></i></div>
+                        </div>
+                        <div class="total-item-cost w-48 text-gray-400 font-bold">$1,149.00</div>
+                        <div class="cart-item-delete w-10 font-bold text-gray-300 cursor-pointer hover:text-gray-400 "><i class="fas fa-times"></i></div>
+
+                    </div> -->
+                </div>
+                <div class="cart-order flex justify-end">
+                    <div class="total-cost ">
+                        <h2 class="text-gray-400 font-bold">total-cost</h2>
+                        <div class="total-cost-number text-gray-600 text-2xl font-bold">$1,149.00</div>
+                    </div>
+                    <div class="complete-order-button font-bold ml-6 text-gray-600 w-56  flex items-center justify-center bg-yellow-400 cursor-pointer hover:bg-yellow-500 rounded text-white mt-2">Complete Order</div>
+                </div>
+
+              
+
+                
+              
+            </div>
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+
+                
+                        <!-- button content -->
+            <div class="menu-container overflow-scroll  w-80 fixed top-0 h-full">
+                <div class="sign-logo bg-gray-800 h-12 w-full flex items-center   text-white">
+                    <h1 class="ml-6">Hello, Sign in</h1>
+
+                </div>
+
+                <div class="menu-content ml-6">
+
+               
+
+                
+                          
+                <ul class="divice sub-menu-title">
+                    <h2 class="menu-title">Digital Content & Devices </h2>
+                    <li class="menu-list text-sm bold">Amazon Music<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">Kindle E-readers & Books<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">Appstore for Android<i class="fas fa-chevron-right"></i></li>
+
+                </ul>
+
+                <ul class="departement sub-menu-title">
+                    <h2 class="menu-title">Shop By Department</h2>
+                    <li class="menu-list text-sm bold ">Electronics<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">Computers<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">Smart Home<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">Arts & Crafts<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">See All</li>
+
+                </ul>
+                <ul class="features sub-menu-title">
+                    <h2 class="menu-title">Programs & Features</h2>
+                    <li class="menu-list text-sm bold">Gift Cards<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">#FounditOnAmazon<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">Amazon Live<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">International Shopping<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">See All</li>
+
+                </ul>
+
+                <ul class="helps sub-menu-title">
+                    <h2 class="menu-title">Help & Settings<i class="fas fa-chevron-right flex flex-grow"></i></h2>
+                    <li class="menu-list text-sm bold">Your Acount<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">English<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">Customer Service<i class="fas fa-chevron-right"></i></li>
+                    <li class="menu-list text-sm bold">Sign In</li>
+
+
+                </ul>
+
+
+
+            </div>
+            </div>
+           
+              
+             
+              
+            <!-- <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">0</li>
+                    <li class="glide__slide">1</li>
+                    <li class="glide__slide">2</li>
+                  </ul>
+                </div>
+
+                <div data-glide-el="controls">
+                    <button data-glide-dir="<<">Start</button>
+                    <button data-glide-dir=">>">End</button>
+                  </div>
+              </div>
+           
+ 
+  -->
+    
+
+           
+           
+
+                              <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></>
+             
+                            <script src="https://unpkg.com/scrollreveal"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+              
+
+
+                         
+                           
+                            <script src="header.js"></script>
+                            <script src="script.js"></script>
+                            <script src="cart.js"></script>
+            </body>
+</html>
